@@ -8,7 +8,7 @@
    ============================== */
 
 /* animation สำหรับ fade เข้าจากข้างล่าง ใช้กับ Hero section */
-@keyframes fade-n-up {
+@keyframes fade-in-up {
     from {
         opcity: 0;
         transform: translateY(24px);
