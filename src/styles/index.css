@@ -17,6 +17,10 @@
     --color-primary-dark: #2F4AC4;      /* สีน้ำเงินเข้มกว่า สำหรับ hover */
     --color-primary-light: #EEF2FF;
 
+    /* --- สีHero background gradient */
+    --color-hero-from: #E4ECFF;         /* gradient ฟ้าอ่อนมากๆ */ 
+    --color-hero-to:   #EAF0FF;
+
     /* --- สีข้อความ --- */
     --color-text-heading: #1A1A2E;      /* สีข้อความหัวข้อ */
     --color-text-body: #4B5563;         /* สีข้อความปกติ */
