@@ -16,7 +16,7 @@ function Button({
     items-center
     justify-center
     font-semibold
-    rounded-full
+    rounded-lg
     transition-all
     duration-200
     cursor-pointer
@@ -46,7 +46,7 @@ function Button({
     // กำหนด class ตาม size ที่เลือก
     const sizeClasses = {
         medium: 'px-6 py-3 text-sm',
-        small: 'px-4 py-2 text-xs',
+        small: 'px-5 py-2.5 text-sm',
     }
 
     return (
