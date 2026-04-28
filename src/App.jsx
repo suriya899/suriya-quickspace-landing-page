@@ -10,23 +10,16 @@
 // นำเข้า components NAVBAR
 import Navbar from "./components/layout/Navbar";
 
+// นำเข้า Hero
+import Hero from "./components/sections/Hero";  
+
 function App() {
+
   return (
-    // (1) <> </> คือ Fragment — ห่อ elements หลายตัวโดยไม่สร้าง div เกินมา
-
     <>
-    {/* (2) Navbar: fixed อยู่ด้านบน ลอยทับ content ทุกอย่าง */}
       <Navbar />
-    {/* (3) <main> คือ semantic tag บอกว่านี่คือเนื้อหาหลักของหน้า
-              pt-16 = padding-top 64px ดัน content ลงมา
-              ไม่ให้ถูก Navbar (สูง h-16 = 64px) บัง */}
       <main className="bg-bg-light min-h-screen">
-
-        {/* sections จะมาวางตรงนี้ทีละตัว เช่น */}
-        {/* <Hero /> */}
-        {/* <Logos /> */}
-        {/* <PerfectSolutions /> */}
-
+        <Hero />
       </main>  
     </>
 
