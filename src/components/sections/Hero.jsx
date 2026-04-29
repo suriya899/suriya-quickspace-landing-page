@@ -16,8 +16,8 @@ export default function Hero() {
     // min-h-screen  = สูงเต็มจอ
     // pt-20         = เว้นบน 80px ให้ Navbar fixed ที่ลอยอยู่
     <section
-      className="min-h-screen pt-20"
-      style={{ background: "linear-gradient(135deg, var(--color-hero-from) 0%, var(--color-hero-to) 100%)" }}
+      className="min-h-screen pt-20 bg-gradient-to-b from-[#E4ECFF] to-[#EAF0FF00]"
+      // style={{ background: "linear-gradient(135deg, var(--color-hero-from) 0%, var(--color-hero-to) 100%)" }}
     >
 
       {/* ── Container: จำกัดความกว้างและ padding ────────────────────── */}

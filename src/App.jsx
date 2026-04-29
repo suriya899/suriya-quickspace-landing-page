@@ -15,6 +15,8 @@ import Hero from "./components/sections/Hero";
 
 import PerfectSolutions from "./components/sections/PerfectSolutions";
 
+import DiscoverAndExplore from "./components/sections/DiscoverAndExplore";
+
 function App() {
 
   return (
@@ -23,6 +25,7 @@ function App() {
       <main className="bg-bg-light min-h-screen">
         <Hero />
         <PerfectSolutions />
+        <DiscoverAndExplore />
       </main>  
     </>
 
