@@ -2,71 +2,36 @@
 // รับ props: icon, title, description
 // icon คือ emoji หรือ element รูปภาพ
 
-function FeatureCard({ icon, title, description}){
+function FeatureCard({ icon, title, description, isActive = false, iconBackground }) {
     return(
-        // กรอบ card สีขาว มีเงาเบาๆ และขอบโค้ง
-        <div className="
-        bg-white    
-        rounded-2xl
-        p-8
-        shadow-sm
-        border
-        border-border
-        hover:shadow-md
-        transition-shadow
-        duration-200
-        ">
+        <div className={`
+        rounded-2xl p-8 transition-all duration-300 h-full lg:px-30
+        ${isActive 
+        ? "bg-white shadow-xs border-none" // ถ้าเด่น: พื้นหลังขาว มีเงาหนา ไม่มีเส้นขอบ
+        : "bg-transparent border-none shadow-none" // ถ้าไม่เด่น: พื้นหลังใส ไม่มีเงา
+        }
+        `}>
 
-        {/* กล่อง icon สีพื้นหลังอ่อน */}
-        <div className="
-        w-14
-        h-14
-        rounded-xl
-        bg-primary-light
-        flex
-        items-center
-        justify-center
-        mb-5">
+        {/* กล่อง icon  */}
 
-        {/* icon ที่รับมาจาก props */}
-        <span className="text-2xl">{icon}</span>
-        </div>
+            <div className="w-[100px] h-[100px] rounded-2xl flex items-center justify-center mb-6 bg-opacity-20"
+            style={{ backgroundColor: iconBackground }}>
+            <img src={icon} alt={title} className="w-[44px] h-[44px] object-contain" />
+            </div>
 
         {/* หัวข้อ card */}
-        <h3 className="
-        text-text-heading
-        font-semibold
-        text-lg
-        mb-3
-        ">{title}
-        </h3>
-
-        {/* คำอธิบาย */}
-        <p className="
-        text-text-body
-        text-sm
-        leading-relaxed
-        mb-4
-        ">{description}
-        </p>
+        <h3 className="text-gray-900 font-bold text-xl mb-3">{title}</h3>
+        <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-grow">{description}</p>
 
         {/* ลิงก์ Get Started */}
         <a 
         href="#"
-        className="
-        text-primary
-        text-sm
-        font-medium
-        hover:underline
-        inline-flex
-        items-center
-        gap-1
-        "
-        >
-            Get Started →
-        </a>
+        className="text-gray-500 font-bold inline-flex items-center gap-1 mt-auto hover:text-gray-900 transition-colors">
+        Get Started »
+      </a>
         </div>
     )
+    
 }
 
 export default FeatureCard

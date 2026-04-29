@@ -13,6 +13,8 @@ import Navbar from "./components/layout/Navbar";
 // นำเข้า Hero
 import Hero from "./components/sections/Hero";  
 
+import PerfectSolutions from "./components/sections/PerfectSolutions";
+
 function App() {
 
   return (
@@ -20,6 +22,7 @@ function App() {
       <Navbar />
       <main className="bg-bg-light min-h-screen">
         <Hero />
+        <PerfectSolutions />
       </main>  
     </>
 
