@@ -5,7 +5,7 @@
 function FeatureCard({ icon, title, description, isActive = false, iconBackground }) {
     return(
         <div className={`
-        rounded-2xl p-8 transition-all duration-300 h-full lg:px-30
+        rounded-2xl p-8 transition-all duration-300 h-full w-[70%] flex flex-col
         ${isActive 
         ? "bg-white shadow-xs border-none" // ถ้าเด่น: พื้นหลังขาว มีเงาหนา ไม่มีเส้นขอบ
         : "bg-transparent border-none shadow-none" // ถ้าไม่เด่น: พื้นหลังใส ไม่มีเงา
@@ -21,7 +21,7 @@ function FeatureCard({ icon, title, description, isActive = false, iconBackgroun
 
         {/* หัวข้อ card */}
         <h3 className="text-gray-900 font-bold text-xl mb-3">{title}</h3>
-        <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-grow">{description}</p>
+        <p className="text-gray-500 text-sm leading-relaxed mb-4 flex-grow ">{description}</p>
 
         {/* ลิงก์ Get Started */}
         <a 

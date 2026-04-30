@@ -19,6 +19,7 @@ import DiscoverAndExplore from "./components/sections/DiscoverAndExplore";
 
 import Testimonial from "./components/sections/Testimonial";
 
+import Pricing from "./components/sections/Pricing";
 function App() {
 
   return (
@@ -29,6 +30,7 @@ function App() {
         <PerfectSolutions />
         <DiscoverAndExplore />
         <Testimonial />
+        <Pricing />
       </main>  
     </>
 

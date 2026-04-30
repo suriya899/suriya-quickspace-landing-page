@@ -5,6 +5,9 @@
 /* นำเข้า custom CSS rules ที่เขียนเพิ่มเติม */
 @import "./custom.css";
 
+/* นำเข้า Google Font Poppins สำหรับใช้ในเว็บ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* ==============================
    QUICKSPACE DESIGN TOKENS
    กำหนดสีและค่าต่างๆ ที่ใช้ทั้งเว็บให้อยู่ที่เดียว
@@ -40,5 +43,8 @@
     --color-border: #E5E7EB;
 
     /* --- Font --- */
-    --font-sans: 'Inter', sans-serif;
+    --font-sans: 'Poppins', sans-serif;
+
 }
+
+

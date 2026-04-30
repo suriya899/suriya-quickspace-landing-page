@@ -7,7 +7,7 @@ import perfectIcon3 from '../../assets/perfect-card-3.png';
 export default function PerfectSolutions() {
   return (
     <section className="py-20 bg-[#F8FAFF]">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-">
 
         {/* ===== Header ===== */}
         <div className="text-center max-w-2xl mx-auto mt-5 ">
