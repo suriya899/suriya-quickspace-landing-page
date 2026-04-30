@@ -9,5 +9,5 @@ export default defineConfig({
     react(),
     tailwindcss(), // เพิ่ม Tailwind เป็น plugin
   ],
-  
+  base: "/suriya-quickspace-landing-page/",
 });
