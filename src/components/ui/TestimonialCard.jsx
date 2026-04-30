@@ -1,69 +1,32 @@
-// Card แสดง review จากลูกค้า ใช้ใน Testimonial section
-// รับ props: title, body, authorName, authorRole, authorImage
+// src/components/ui/TestimonialCard.jsx
 
-function TestimonialCard({ title, body, authorName, authorRole, authorImage}){
-    return (
-        //กรอบ card สีขาว
-        <div className="
-        bg-white
-        rounded-2xl
-        p-8
-        shadow-sm
-        border
-        border-border
-        ">
-        
-        {/* หัวข้อ review */}
-        <h4 className="
-        text-text-heading
-        font-semibold
-        text-base
-        mb-3
-        ">
-            {title}
-        </h4>
+function TestimonialCard({ title, description, avatar, name, role, className }) {
+  return (
+    <div className={`bg-white p-8 md:p-10 rounded-[32px]  h-full flex flex-col ${className}`}>
+      {/* หัวข้อของการรีวิว */}
+      <h3 className="text-xl md:text-2xl font-bold text-[#0D1B39] mb-4 leading-tight">
+        {title}
+      </h3>
+      
+      {/* เนื้อหาการรีวิว */}
+      <p className="text-gray-500 leading-relaxed mb-8 flex-grow">
+        {description}
+      </p>
 
-        {/* เนื้อหา review */}
-        <p className="
-        text-text-body
-        text-sm
-        leading-relaxed
-        mb-6
-        ">
-            {body}
-        </p>
-
-        {/* ส่วนข้อมูลผู้เขียน review */}
-        <div className="flex items-center gap-3">
-
-            {/* รูปโปรไฟล์ */}
-            <img 
-            src="{authorImage}" 
-            alt="{authorName}"
-            className="
-            w-10
-            h-10
-            rounded-full
-            object-cover
-            "
-             />
-        
-        {/* ชื่อและตำแหน่ง */}
+      {/* ส่วนข้อมูลผู้รีวิว (Avatar + Info) */}
+      <div className="flex items-center gap-4">
+        <img 
+          src={avatar} 
+          alt={name} 
+          className="w-12 h-12 rounded-full object-cover" 
+        />
         <div>
-            <p className="text-text-heading font-semibold text-sm">
-                {authorName}
-            </p>
-            <p className="text-text-muted text-xs">
-                {authorRole}
-            </p>
+          <h4 className="font-bold text-[#0D1B39] text-sm md:text-base">{name}</h4>
+          <p className="text-gray-400 text-xs md:text-sm">{role}</p>
         </div>
-
-        </div>
-
-
-
-        </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default TestimonialCard
+export default TestimonialCard;

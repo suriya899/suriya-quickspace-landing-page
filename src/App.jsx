@@ -17,6 +17,8 @@ import PerfectSolutions from "./components/sections/PerfectSolutions";
 
 import DiscoverAndExplore from "./components/sections/DiscoverAndExplore";
 
+import Testimonial from "./components/sections/Testimonial";
+
 function App() {
 
   return (
@@ -26,6 +28,7 @@ function App() {
         <Hero />
         <PerfectSolutions />
         <DiscoverAndExplore />
+        <Testimonial />
       </main>  
     </>
 
