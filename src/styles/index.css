@@ -1,14 +1,11 @@
-/* src/index.css */
 /* นำเข้า Google Font Poppins สำหรับใช้ในเว็บ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* นำเข้า Tailwind CSS ทั้งหมด */
 @import "tailwindcss";
 
 /* นำเข้า custom CSS rules ที่เขียนเพิ่มเติม */
 @import "./custom.css";
-
-
 
 /* ==============================
    QUICKSPACE DESIGN TOKENS
@@ -17,36 +14,33 @@
    ============================== */
 
 @theme {
-    /* --- สีหลัก --- */
-    --color-primary: #3B5BDB;           /* สีน้ำเงิน ปุ่ม Try Free */
-    --color-primary-dark: #2F4AC4;      /* สีน้ำเงินเข้มกว่า สำหรับ hover */
-    --color-primary-light: #EEF2FF;
+  /* --- สีหลัก --- */
+  --color-primary: #3b5bdb; /* สีน้ำเงิน ปุ่ม Try Free */
+  --color-primary-dark: #2f4ac4; /* สีน้ำเงินเข้มกว่า สำหรับ hover */
+  --color-primary-light: #eef2ff;
 
-    /* --- สีHero background gradient */
-    --color-hero-from: #E4ECFF;         /* gradient ฟ้าอ่อนมากๆ */ 
-    --color-hero-to:   #EAF0FF;
+  /* --- สีHero background gradient */
+  --color-hero-from: #e4ecff; /* gradient ฟ้าอ่อนมากๆ */
+  --color-hero-to: #eaf0ff;
 
-    /* --- สีข้อความ --- */
-    --color-text-heading: #1A1A2E;      /* สีข้อความหัวข้อ */
-    --color-text-body: #4B5563;         /* สีข้อความปกติ */
-    --color-text-muted: #9CA3AF;        /* สีข้อความรอง สีเทาอ่อน */
+  /* --- สีข้อความ --- */
+  --color-text-heading: #1a1a2e; /* สีข้อความหัวข้อ */
+  --color-text-body: #4b5563; /* สีข้อความปกติ */
+  --color-text-muted: #9ca3af; /* สีข้อความรอง สีเทาอ่อน */
 
-    /* --- สี accent (สีเสริม) --- */
-    --color-accent-orange: #FF8C42;     /* สีส้ม สำหรับ icon Grow Your Business */
-    --color-accent-blue: #60A5FA;       /* สีฟ้า สำหรับ icon Drive More Sales */
-    --color-accent-yellow: #FBBF24;     /* สีเหลือง สำหรับ icon Handled By Expert */
+  /* --- สี accent (สีเสริม) --- */
+  --color-accent-orange: #ff8c42; /* สีส้ม สำหรับ icon Grow Your Business */
+  --color-accent-blue: #60a5fa; /* สีฟ้า สำหรับ icon Drive More Sales */
+  --color-accent-yellow: #fbbf24; /* สีเหลือง สำหรับ icon Handled By Expert */
 
-    /* --- สีพื้นหลัง --- */
-    --color-bg-white: #FFFFFF;
-    --color-bg-light: #F8FAFF;          /* พื้นหลังสีขาวแกมน้ำเงินอ่อนมาก */
-    --color-bg-section: #EEF2FF;        /* พื้นหลัง section สีม่วงน้ำเงินอ่อน */
+  /* --- สีพื้นหลัง --- */
+  --color-bg-white: #ffffff;
+  --color-bg-light: #f8faff; /* พื้นหลังสีขาวแกมน้ำเงินอ่อนมาก */
+  --color-bg-section: #eef2ff; /* พื้นหลัง section สีม่วงน้ำเงินอ่อน */
 
-    /* --- สีเส้นขอบ --- */
-    --color-border: #E5E7EB;
+  /* --- สีเส้นขอบ --- */
+  --color-border: #e5e7eb;
 
-    /* --- Font --- */
-    --font-sans: 'Poppins', sans-serif;
-
+  /* --- Font --- */
+  --font-sans: "Poppins", sans-serif;
 }
-
-

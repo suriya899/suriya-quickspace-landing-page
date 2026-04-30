@@ -1,5 +1,5 @@
-import React from 'react';
-import NewsletterInput from '../ui/NewsletterInput';
+import React from "react";
+import NewsletterInput from "../ui/NewsletterInput";
 
 /**
  * ส่วน Newsletter Section
@@ -13,20 +13,18 @@ const Newsletter = () => {
        - overflow-hidden: กันหน้าจอเลื่อนแนวนอนตอนเราขยายกล่องสีฟ้าในมือถือ
     */
     <section className="py-20 bg-white px-4 overflow-hidden">
-      
       {/* 
           กล่องสีฟ้า (Main Box):
-          1. สภาวะปกติ (จอใหญ่):
+          1. จอใหญ่:
              - max-w-[1117px] mx-auto: กว้างตาม Figma และอยู่กึ่งกลาง
              - rounded-[30px]: ขอบมน 30px
           
-          2. สภาวะหน้าจอเล็ก (ต่ำกว่า 768px หรือช่วง 767px):
+          2. จอเล็ก (ต่ำกว่า 768px หรือช่วง 767px):
              - max-md:mx-[-1rem]: ใช้ Negative Margin ดึงขอบซ้ายขวาออกไปติดลบเพื่อหักล้าง px-4 ของตัวแม่
              - max-md:w-[calc(100%+2rem)]: ขยายความกว้างเกิน 100% เพื่อให้ชนขอบจอจริง
              - max-md:rounded-none: เอาขอบมนออกเพื่อให้กล่องแนบสนิทกับขอบจอโทรศัพท์
       */}
       <div className="w-full max-w-[1117px] mx-auto bg-[#E7F5FF] rounded-[30px] py-16 px-6 text-center max-md:mx-[-1rem] max-md:w-[calc(100%+2rem)] max-md:rounded-none transition-all duration-300">
-        
         {/* หัวข้อโปรเจกต์: สีน้ำเงินเข้ม #090F4E */}
         <h2 className="text-[#090F4E] text-[28px] md:text-[36px] font-bold mb-4 leading-tight">
           Sign up to our newsletter
@@ -41,7 +39,6 @@ const Newsletter = () => {
         <div className="px-4 md:px-0">
           <NewsletterInput />
         </div>
-
       </div>
     </section>
   );

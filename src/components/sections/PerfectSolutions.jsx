@@ -1,14 +1,13 @@
 import FeatureCard from "../ui/FeatureCard";
 
-import perfectIcon1 from '../../assets/perfect-card-1.png';
-import perfectIcon2 from '../../assets/perfect-card-2.png';
-import perfectIcon3 from '../../assets/perfect-card-3.png';
+import perfectIcon1 from "../../assets/perfect-card-1.png";
+import perfectIcon2 from "../../assets/perfect-card-2.png";
+import perfectIcon3 from "../../assets/perfect-card-3.png";
 
 export default function PerfectSolutions() {
   return (
     <section className="py-20 bg-[#F8FAFF]">
-      <div className="container mx-auto px-">
-
+      <div className="max-w-7xl mx-auto px-3">
         {/* ===== Header ===== */}
         <div className="text-center max-w-2xl mx-auto mt-5 ">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -17,14 +16,13 @@ export default function PerfectSolutions() {
 
           <p className="mt-4 text-gray-500">
             Graphs displaying your performance for metrics like follower
-            evolution, average rate per post and reach and impressions
-            to give you the insights.
+            evolution, average rate per post and reach and impressions to give
+            you the insights.
           </p>
         </div>
 
         {/* ===== Cards ===== */}
-        <div className="mt-25 grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-          
+        <div className="mt-25 grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center items-stretch">
           {/* Card 1 */}
           <FeatureCard
             title="Grow Your Business"
@@ -54,7 +52,6 @@ export default function PerfectSolutions() {
             isActive={false}
           />
         </div>
-
       </div>
     </section>
   );

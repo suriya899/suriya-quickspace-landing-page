@@ -1,30 +1,23 @@
-// src/App.jsx
 // Component หลักที่รวม Section ทั้งหมดของหน้าเว็บ
-// ตอนนี้ยังว่างอยู่ จะค่อยๆ เพิ่ม Section เข้ามาในขั้นต่อๆ ไป
-
-// // นำเข้า components ที่เพิ่งสร้างมาทดสอบดู
-// import Button from "./components/ui/Button"
-// import FeatureCard from "./components/ui/FeatureCard"
-// import TestimonialCard from "./components/ui/TestimonialCard"
 
 // นำเข้า components NAVBAR
 import Navbar from "./components/layout/Navbar";
-
 // นำเข้า Hero
-import Hero from "./components/sections/Hero";  
-
+import Hero from "./components/sections/Hero";
+// นำเข้า perfect solutions
 import PerfectSolutions from "./components/sections/PerfectSolutions";
-
+// นำเข้า DiscoverAndExplore
 import DiscoverAndExplore from "./components/sections/DiscoverAndExplore";
-
+// นำเข้า Testimonial
 import Testimonial from "./components/sections/Testimonial";
-
+// นำเข้า Pricing
 import Pricing from "./components/sections/Pricing";
-
+// นำเข้า Newsletter
 import Newsletter from "./components/sections/Newsletter";
+// นำเข้า Footer
+import Footer from "./components/sections/Footer";
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -35,10 +28,10 @@ function App() {
         <Testimonial />
         <Pricing />
         <Newsletter />
-      </main>  
+      </main>
+      <Footer />
     </>
-
-  )
+  );
 }
 
-export default App
+export default App;
