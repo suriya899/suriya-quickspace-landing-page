@@ -20,6 +20,9 @@ import DiscoverAndExplore from "./components/sections/DiscoverAndExplore";
 import Testimonial from "./components/sections/Testimonial";
 
 import Pricing from "./components/sections/Pricing";
+
+import Newsletter from "./components/sections/Newsletter";
+
 function App() {
 
   return (
@@ -31,6 +34,7 @@ function App() {
         <DiscoverAndExplore />
         <Testimonial />
         <Pricing />
+        <Newsletter />
       </main>  
     </>
 
