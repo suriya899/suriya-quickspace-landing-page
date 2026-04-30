@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 // Component หลักที่รวม Section ทั้งหมดของหน้าเว็บ
 
 // นำเข้า components NAVBAR
@@ -19,7 +20,7 @@ import Footer from "./components/sections/Footer";
 
 function App() {
   return (
-    <>
+    <BrowserRouter basename="/suriya-quickspace-landing-page">
       <Navbar />
       <main className="bg-bg-light min-h-screen">
         <Hero />
@@ -30,7 +31,7 @@ function App() {
         <Newsletter />
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
