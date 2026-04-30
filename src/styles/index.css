@@ -4,8 +4,7 @@
 /* นำเข้า Tailwind CSS ทั้งหมด */
 @import "tailwindcss";
 
-/* นำเข้า custom CSS rules ที่เขียนเพิ่มเติม */
-@import "./custom.css";
+
 
 /* ==============================
    QUICKSPACE DESIGN TOKENS
